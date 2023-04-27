@@ -81,7 +81,7 @@ nav {
   padding: 5px;
 }
 
-#inputSearch {
+.inputSearch {
   position: absolute;
   top: 0;
   left: 0;
