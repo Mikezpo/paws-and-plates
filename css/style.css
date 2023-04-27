@@ -99,22 +99,22 @@ nav {
 
 #formSearch .fa {
   box-sizing: border-box;
-  padding: 10px;
-  width: 42.5px;
-  height: 42.5px;
+  padding: 1.4rem;
+  width: 4.2rem;
+  height: 4.2rem;
   position: absolute;
   top: 0;
   right: 0;
   border-radius: 50%;
-  color: #07051a;
+  color: #000000;
   text-align: center;
-  font-size: 1.2em;
+  font-size: 1.4rem;
   transition: all 1s;
 }
 
 #formSearch:hover,
 #formSearch:valid {
-  width: 200px;
+  width: 25rem;
   cursor: pointer;
 }
 
@@ -125,14 +125,14 @@ nav {
 
 #formSearch:hover .fa,
 #formSearch:valid .fa {
-  background: #07051a;
-  color: white;
+  background: #000000;
+  color: #ffffff;
 }
 
 #formSearch a {
   display: none;
   position: absolute;
-  top: 70px;
+  top: 6rem;
   bottom: 0;
   left: 0;
   right: 0;
