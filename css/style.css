@@ -71,14 +71,15 @@ nav {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  margin: 10rem 0 5rem 0;
   transition: all 1s;
-  width: 50px;
-  height: 50px;
-  background: white;
+  width: 5rem;
+  height: 5rem;
+  background: #ffffff;
   box-sizing: border-box;
   border-radius: 25px;
   border: 4px solid white;
-  padding: 5px;
+  padding: 1rem;
 }
 
 .inputSearch {
@@ -86,14 +87,14 @@ nav {
   top: 0;
   left: 0;
   width: 100%;
-  height: 42.5px;
+  height: 4rem;
   line-height: 2rem;
   outline: 0;
   border: 0;
   display: none;
   font-size: 2rem;
   border-radius: 20px;
-  padding: 0 20px;
+  padding: 0 2rem;
 }
 
 #formSearch .fa {
