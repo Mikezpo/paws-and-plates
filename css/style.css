@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;600;800&family=Oswald:wght@200;400;600&display=swap');
 
 /* Box Model Hack */
 * {
@@ -10,7 +10,7 @@
 html {
   font-size: 62.5%;
   color: black;
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 100;
   line-height: 2;
 }
@@ -18,7 +18,7 @@ html {
 body {
   margin: 0;
   padding: 0;
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: 'Oswald', sans-serif;
   background-color: #ffffff;
 }
 
@@ -41,8 +41,10 @@ body::after {
 
 h1 {
   font-size: 4rem;
-  font-weight: 500;
+  font-weight: 400;
   margin: 2rem 0 2rem 3rem;
+  font-family: 'Montserrat', sans-serif;
+  word-spacing: 1rem;
 }
 
 h1 a {
