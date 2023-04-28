@@ -67,7 +67,7 @@ nav {
 /* SECTION GENERAL */
 
 section {
-  margin: 3rem 2rem;
+  margin: 10rem 2rem;
 
   border: 1px solid red;
 }
@@ -168,7 +168,7 @@ h2 {
 
 .regionBox {
   width: 70%;
-  margin: 0 auto;
+  margin: 10rem auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -176,17 +176,52 @@ h2 {
 }
 
 .region {
-  background: white;
   width: 20rem;
   height: 15rem;
   border-radius: 16px;
   margin: 1rem;
   justify-content: center;
   align-items: center;
-  
+  cursor: pointer;
+}
+
+.region:hover {
+  transform: scale(1.1);
+  transition: all 0.3s;
 }
 
 h3 {
   font-size: 2.3rem;
   text-align: center;
 }
+
+.viana {
+  background: url('https://www.iberian-escapes.com/images/viana-do-castelo-santa-luzia.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.braga {
+  background: url('https://images.unsplash.com/photo-1568977337691-8e2c4baa094b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.porto {
+  background: url('https://images.unsplash.com/photo-1581887469434-5dacb946ab56?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.aveiro {
+  background: url('https://images.unsplash.com/photo-1531772337062-9d94547f333f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1430&q=80');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.coimbra {
+  background: url('https://images.unsplash.com/photo-1635893312205-6abda7db17a0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
