@@ -45,6 +45,9 @@ h1 {
   margin: 2rem 0 2rem 3rem;
   font-family: "Montserrat", sans-serif;
   word-spacing: 1rem;
+  display: inline-block;
+  padding: 0 1rem;
+  
 }
 
 h1 a {
@@ -65,18 +68,19 @@ nav {
 }
 
 .navButton {
+  display: inline-block;
+  margin: 0 auto;
+  border: 1px solid red;
+}
+
+.bar {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-end;
-  margin-right: 2rem;
-}
-
-.bar {
   width: 3rem;
+  border: 1px solid white;
   margin-top: 0.6rem;
-  color: white;
-  border: 1px solid red;
 }
 
 /* SECTION GENERAL */
