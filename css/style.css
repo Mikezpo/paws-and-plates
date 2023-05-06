@@ -64,12 +64,27 @@ nav {
   background: transparent;
 }
 
+.navButton {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  margin-right: 2rem;
+}
+
+.bar {
+  width: 3rem;
+  margin-top: 0.6rem;
+  color: white;
+  border: 1px solid red;
+}
+
 /* SECTION GENERAL */
 
 section {
   margin: 10rem 2rem;
 
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 /* TOP SECTION */
