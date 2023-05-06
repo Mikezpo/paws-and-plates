@@ -43,7 +43,6 @@ body::after {
   display: flex;
   align-items: center;
   width: 100%;
-  border: 1px solid red;
 }
 
 h1 {
@@ -84,8 +83,18 @@ nav {
   justify-content: center;
   align-items: flex-end;
   width: 3rem;
-  border: 1px solid white;
+  border: 1.2px solid white;
   margin-top: 0.6rem;
+}
+
+#barOne, #barTwo {
+  width: 60%;
+}
+
+#barTwo {
+  width: 60%;
+  margin-right: 0;
+  margin-left: auto;
 }
 
 /* SECTION GENERAL */
