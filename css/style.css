@@ -39,13 +39,19 @@ body::after {
 
 /* GENERAL STYLE */
 
+.navbar {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  border: 1px solid red;
+}
+
 h1 {
   font-size: 4rem;
   font-weight: 600;
   margin: 2rem 0 2rem 3rem;
   font-family: "Montserrat", sans-serif;
   word-spacing: 1rem;
-  display: inline-block;
   padding: 0 1rem;
   
 }
@@ -68,9 +74,8 @@ nav {
 }
 
 .navButton {
-  display: inline-block;
-  margin: 0 auto;
-  border: 1px solid red;
+  align-items: flex-end;
+  margin: 0 2rem 0 auto;
 }
 
 .bar {
@@ -87,8 +92,6 @@ nav {
 
 section {
   margin: 10rem 2rem;
-
-  /* border: 1px solid red; */
 }
 
 /* TOP SECTION */
