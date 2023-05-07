@@ -55,7 +55,7 @@ h1 {
 }
 
 h1 a {
-  color: rgb(206, 240, 248);
+  color: rgb(255, 255, 255);
 }
 
 li {
@@ -108,6 +108,7 @@ h2 {
   text-align: center;
   color: white;
   font-size: 3rem;
+  padding: 5rem 0;
 }
 
 
@@ -264,6 +265,10 @@ footer {
 .companyTitleFooter a {
   color: white;
   padding: 2rem 3rem;
+  font-family: "Montserrat", sans-serif;
+  word-spacing: 1rem;
+  font-size: 2.4rem;
+  font-weight: 600;
 
   border: 1px solid red;
 }
