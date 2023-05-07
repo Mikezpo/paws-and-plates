@@ -52,7 +52,6 @@ h1 {
   font-family: "Montserrat", sans-serif;
   word-spacing: 1rem;
   padding: 0 1rem;
-  
 }
 
 h1 a {
@@ -87,12 +86,11 @@ nav {
   margin-top: 0.6rem;
 }
 
-#barOne, #barTwo {
+#barOne, #barThree {
   width: 60%;
 }
 
-#barTwo {
-  width: 60%;
+#barThree {
   margin-right: 0;
   margin-left: auto;
 }
@@ -256,3 +254,16 @@ h3 {
   background-size: cover;
 }
 
+/* FOOTER */
+
+footer {
+  padding: 5rem 0;
+  background:rgba(60, 93, 100, 0.479)
+}
+
+.companyTitleFooter a {
+  color: white;
+  padding: 2rem 3rem;
+
+  border: 1px solid red;
+}
