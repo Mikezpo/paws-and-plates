@@ -270,5 +270,24 @@ footer {
   font-size: 2.4rem;
   font-weight: 600;
 
-  border: 1px solid red;
+  /* border: 1px solid red; */
+}
+
+.copyright {
+  padding: 0 2rem;
+  text-align: center;
+}
+
+.copyrightFooter, .copyrightFooter a {
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  color: white;
+  padding-bottom: 1rem;
+  letter-spacing: 0.2rem;
+}
+
+.copyrightFooter a:hover {
+  color: rgb(216, 185, 129);
 }
