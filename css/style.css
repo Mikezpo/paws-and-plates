@@ -291,3 +291,21 @@ footer {
 .copyrightFooter a:hover {
   color: rgb(216, 185, 129);
 }
+
+/* NEWSLETTER */
+
+.formDiv {
+  width: 100%;
+  text-align: center;
+}
+
+.newsletterBtn {
+  width: 10rem;
+  padding: 2rem;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.newsletterBtn:hover {
+  transform: scale(1.1);
+}
