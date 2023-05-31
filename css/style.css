@@ -141,6 +141,7 @@ h2 {
   font-size: 2rem;
   border-radius: 20px;
   padding: 0 2rem;
+  caret-color: #9ecaed;
 }
 
 #formSearch .fa {
@@ -298,13 +299,39 @@ footer {
   text-align: center;
 }
 
+.newsletterSection input {
+  height: 3rem;
+  width: 18rem;
+  text-align: center;
+}
+
+.inputBox {
+  border-radius: 10px 0 0 10px;
+  border: 1px solid white;
+  caret-color: #9ecaed;
+}
+
+.inputBox:focus {
+  outline: none;
+  box-shadow: 0 0 20px #9ecaed;
+}
+
 .newsletterBtn {
-  width: 10rem;
-  padding: 2rem;
-  border-radius: 10px;
+  border-radius: 0 10px 10px 0;
+  height: 3rem;
+  width: 15rem;
+  padding: 5px;
+  text-align: center;
+  margin-left: -0.2rem;
+  border: 1px solid white;
+  color: white;
+  background: none;
   cursor: pointer;
+  margin-bottom: 2em;
 }
 
 .newsletterBtn:hover {
-  transform: scale(1.1);
+  color: white;
+  background-color: rgb(182, 115, 40);
+  box-shadow: 0 0 20px #9ecaed;
 }
