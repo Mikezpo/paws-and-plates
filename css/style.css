@@ -27,7 +27,7 @@ body::after {
   background-image: url("https://images.unsplash.com/photo-1477936432016-8172ed08637e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3774&q=80");
   background-repeat: no-repeat;
   background-size: cover;
-  top: 0;
+  top: -10rem;
   left: 0;
   bottom: 0;
   right: 0;
@@ -41,7 +41,7 @@ body::after {
   --white-color: rgb(255, 255, 255);
   --black-color: rgb(0, 0, 0);
   --blue-light-color: #9ecaed;
-  --blue-footer: rgba(60, 93, 100, 0.479);
+  --blue-footer: rgba(219, 209, 189, 0.479);
   --beije-color: rgb(216, 185, 129);
 }
 
@@ -80,8 +80,17 @@ nav {
 }
 
 .navButton {
-  align-items: flex-end;
-  margin: 0 2rem 0 auto;
+  position: absolute;
+  top: 4rem;
+  right: 3rem;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+
+.navButton:hover{
+  transform: scale(1.1);
 }
 
 .bar {
@@ -102,7 +111,6 @@ nav {
   margin-right: 0;
   margin-left: auto;
 }
-
 
 /* SECTION GENERAL */
 
