@@ -24,11 +24,9 @@ body {
 
 body::after {
   content: "";
-  background-image: url("https://images.unsplash.com/photo-1520824596941-f5f578149ec8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80");
+  background-image: url("https://images.unsplash.com/photo-1477936432016-8172ed08637e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3774&q=80");
   background-repeat: no-repeat;
   background-size: cover;
-  background-size: cover;
-  opacity: 0.9;
   top: 0;
   left: 0;
   bottom: 0;
@@ -218,6 +216,7 @@ h2 {
 .region:hover {
   transform: scale(1.1);
   transition: all 0.3s;
+  box-shadow: 0px 0px 10px white;
 }
 
 h3 {
