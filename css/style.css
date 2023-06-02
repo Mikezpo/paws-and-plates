@@ -42,6 +42,7 @@ body::after {
   --black-color: rgb(0, 0, 0);
   --blue-light-color: #9ecaed;
   --blue-footer: rgba(219, 209, 189, 0.479);
+  --navscroll-color: rgba(138, 129, 115, 0.925);
   --beije-color: rgb(216, 185, 129);
 }
 
@@ -114,29 +115,34 @@ nav {
 
 /* Navbar drop down menu */
 
+.navLinks {
+  display: none;
+}
+
 .navLinks.active{
-  padding: 12rem 0 3rem 0;
-  background: var(--blue-footer);
+  padding: 2rem 0 3rem 0;
+  background: var(--navscroll-color);
   width: 100%;
   position: absolute;
   top: 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .navLinks.active li {
   text-align: center;
-  margin: 0.6rem auto;
+  margin: 2rem auto;
 }
 
 .navLinks.active li a {
   padding: 1rem;
+  font-size: 2.6rem;
+  font-weight: 400;
 }
 
 .navLinks.active li a:hover {
   border-bottom: 2px solid var(--beije-color);
-}
-
-.navLinks.active {
-  display: flex;
 }
 
 /* SECTION GENERAL */
