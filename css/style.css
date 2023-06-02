@@ -355,6 +355,7 @@ h3 {
   color: var(--white-color);
   background-color: var(--beije-color);
   box-shadow: 0 0 20px var(--blue-light-color);
+  transition: all 0.7s;
 }
 
 /* FOOTER */
@@ -391,5 +392,6 @@ footer {
 }
 
 .copyrightFooter a:hover {
-  color: var(--beije-color);
+  color: var(--blue-light-color);
+  transition: all 0.7s;
 }
