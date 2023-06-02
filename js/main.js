@@ -24,3 +24,4 @@ for (const item of menuItems) {
 toggleButton.addEventListener('click', () => {
   navbarLinks.classList.toggle('active');
 });
+

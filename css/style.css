@@ -55,9 +55,9 @@ body::after {
 }
 
 h1 {
-  font-size: 4rem;
+  font-size: 3.3rem;
   font-weight: 600;
-  margin: 2rem 0 2rem 3rem;
+  margin: 2rem 0 2rem 2rem;
   font-family: "Montserrat", sans-serif;
   word-spacing: 1rem;
   padding: 0 1rem;
@@ -83,7 +83,7 @@ nav {
 .navButton {
   position: absolute;
   top: 4rem;
-  right: 3rem;
+  right: 2rem;
   flex-direction: column;
   justify-content: space-between;
   width: 30px;
@@ -120,10 +120,14 @@ nav {
   display: none;
 }
 
+.navLinks ul {
+  padding: 0;
+}
+
 .navLinks.active{
   padding: 2rem;
   background: var(--navscroll-color);
-  width: 100%;
+  width: 100vw;
   position: absolute;
   top: 10rem;
   display: flex;
