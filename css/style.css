@@ -112,6 +112,33 @@ nav {
   margin-left: auto;
 }
 
+/* Navbar drop down menu */
+
+.navLinks.active{
+  padding: 12rem 0 3rem 0;
+  background: var(--blue-footer);
+  width: 100%;
+  position: absolute;
+  top: 10rem;
+}
+
+.navLinks.active li {
+  text-align: center;
+  margin: 0.6rem auto;
+}
+
+.navLinks.active li a {
+  padding: 1rem;
+}
+
+.navLinks.active li a:hover {
+  border-bottom: 2px solid var(--beije-color);
+}
+
+.navLinks.active {
+  display: flex;
+}
+
 /* SECTION GENERAL */
 
 section {
