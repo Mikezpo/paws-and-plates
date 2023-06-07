@@ -206,6 +206,10 @@ h2 {
   caret-color: var(--blue-light-color);
 }
 
+#items {
+  
+}
+
 #formSearch .fa {
   box-sizing: border-box;
   padding: 1.4rem;
@@ -376,8 +380,6 @@ footer {
   word-spacing: 1rem;
   font-size: 2.4rem;
   font-weight: 600;
-
-  /* border: 1px solid red; */
 }
 
 .copyright {
@@ -426,7 +428,7 @@ footer {
 
 .bubble {
   height: max(300px, 30vw);
-  width: max(300px, 30vw);
+  width: max(500px, 30vw);
   
   background-color: var(--blue-light-color);
   border-radius: 100%;
