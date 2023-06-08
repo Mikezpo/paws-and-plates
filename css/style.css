@@ -206,9 +206,9 @@ h2 {
   caret-color: var(--blue-light-color);
 }
 
-#items {
+/* #items {
   
-}
+} */
 
 #formSearch .fa {
   box-sizing: border-box;
@@ -427,7 +427,7 @@ footer {
 }
 
 .bubble {
-  height: max(300px, 30vw);
+  height: max(150px, 15vw);
   width: max(500px, 30vw);
   
   background-color: var(--blue-light-color);
