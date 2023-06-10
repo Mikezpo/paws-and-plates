@@ -264,11 +264,13 @@ h2 {
 .regionSection {
   height: 100%;
   width: 100%;
+  margin: 0 auto;
   display: grid;
   grid-template-columns: 2fr 1fr;
   grid-template-rows: 2fr 1fr;
-  position: relative;
-  transition: transform 400ms ease; 
+  transition: transform 400ms ease;
+
+  border: 1px solid red;
 }
 
 .regionSection[data-status="inactive"] {
@@ -298,11 +300,21 @@ h2 {
   transition: none;
 }
 
+.regionSection > .regionBox {
+  height: 100%;
+  display: flex;
+}
+
+.regionIntro {
+  height: 15rem;
+  border: 1px solid red;
+}
+
 
 .regionBox {
   /* width: 70%; */
   margin: 10rem auto;
-  display: flex;
+  
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
