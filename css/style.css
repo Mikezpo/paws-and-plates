@@ -261,13 +261,53 @@ h2 {
 
 /* REGION SECTION */
 
+.regionSection {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 2fr 1fr;
+  position: relative;
+  transition: transform 400ms ease; 
+}
+
+.regionSection[data-status="inactive"] {
+  transform: translateX(-100%);
+  transition: none;
+}
+
+.regionSection[data-status="active"] {
+  transform: translateX(0%);
+}
+
+.regionSection[data-status="before"] {
+  transform: translateX(-100%);
+}
+
+.regionSection[data-status="after"] {
+  transform: translateX(100%);
+}
+
+.regionSection[data-status="becoming-active-from-before"] {
+  transform: translateX(-100%);
+  transition: none;
+}
+
+.regionSection[data-status="becoming-active-from-after"] {
+  transform: translateX(100%);
+  transition: none;
+}
+
+
 .regionBox {
-  width: 70%;
+  /* width: 70%; */
   margin: 10rem auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+
+  border: 1px solid red;
 }
 
 .region {
