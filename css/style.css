@@ -39,10 +39,10 @@ body::after {
 
 :root {
   --white-color: rgb(255, 255, 255);
-  --black-color: rgb(0, 0, 0);
+  --black-color: rgb(17, 16, 16);
   --blue-light-color: #9ecaed;
   --blue-darker-color: #648097;
-  --blue-footer: rgba(219, 209, 189, 0.479);
+  --bronze-footer: rgb(218, 169, 114);
   --navscroll-color: rgba(138, 129, 115, 0.925);
   --beije-color: rgb(216, 185, 129);
   --red-color: #882121;
@@ -67,6 +67,11 @@ h1 {
 
 h1 a {
   color: var(--white-color);
+}
+
+h1 a:hover {
+  color: var(--blue-light-color);
+  transition: all 0.3s;
 }
 
 li {
@@ -95,6 +100,7 @@ nav {
 .navButton:hover {
   transform: scale(1.1);
   transition: all 0.7s;
+  color: var(--blue-light-color);
 }
 
 .bar {
@@ -129,7 +135,7 @@ nav {
 
 .navLinks.active {
   padding: 2rem;
-  background: var(--navscroll-color);
+  background: var( --bronze-footer);
   width: 100vw;
   position: absolute;
   top: 10rem;
@@ -146,7 +152,8 @@ nav {
 .navLinks.active li a {
   padding: 1rem;
   font-size: 2.6rem;
-  font-weight: 400;
+  font-weight: 600;
+  color: var(--blue-darker-color);
 }
 
 .navLinks.active li:hover {
@@ -155,7 +162,7 @@ nav {
 }
 
 .navLinks.active li a:hover {
-  border-bottom: 2px solid var(--beije-color);
+  border-bottom: 2px solid var(--blue-darker-color);
 }
 
 /* SECTION GENERAL */
@@ -220,7 +227,7 @@ h2 {
   top: 0;
   right: 0;
   border-radius: 50%;
-  color: var(--black-color);
+  color: var(--blue-darker-color);
   text-align: center;
   font-size: 1.4rem;
   transition: all 1s;
@@ -239,7 +246,7 @@ h2 {
 
 #formSearch:hover .fa,
 #formSearch:valid .fa {
-  background: var(--black-color);
+  background: var(--blue-light-color);
   color: var(--white-color);
 }
 
@@ -266,8 +273,6 @@ h2 {
   height: 60rem;
   max-width: 120rem;
   margin: 0 auto 30rem auto;
-
-  border: 1px solid red;
 }
 
 .carousel {
@@ -290,7 +295,7 @@ h2 {
   -webkit-align-items: center;
   -webkit-justify-content: flex-end;
   position: relative;
-  background-color: var(--beije-color);
+  background-color: var(--bronze-footer);
   flex-shrink: 0;
   -webkit-flex-shrink: 0;
   position: absolute;
@@ -308,11 +313,8 @@ h2 {
   -webkit-flex-direction: column;
   order: 1;
   left: 0;
-  
   padding: 3rem;
   width: 40%;
-
-  border: 1px solid red;
 }
 
 .carouselImage {
@@ -355,18 +357,17 @@ h2 {
 .itemContainer {
   height: 100%;
   padding: 3rem 2rem;
-
-  border: 1px solid red;
 }
 
 .itemCity {
   font-size: 4rem;
+  color: var(--blue-darker-color);
 }
 
 .itemSubHeading {
   font-size: 2.6rem;
   font-weight: 500;
-  color: var(--red-color);
+  color: var(--black-color);
   text-align: left;
 }
 
@@ -402,7 +403,7 @@ h2 {
 .carouselNav {
   position: absolute;
   right: 0;
-  z-index: 999;
+  z-index: 5;
   background-color: #fff;
   bottom: 0;
 }
@@ -411,7 +412,7 @@ h2 {
   display: inline-block;
   vertical-align: middle;
   width: 16px;
-  fill: var(--navscroll-color);
+  fill: var(--black-color);
 }
 
 .carouselArrow {
@@ -426,7 +427,7 @@ h2 {
   right: -3px;
   position: absolute;
   width: 1px;
-  background-color: var(--white-color);
+  background-color: var(--black-color);
   height: 14px;
   top: 50%;
   margin-top: -7px;
@@ -507,7 +508,7 @@ h3 {
 
 footer {
   padding: 5rem 0;
-  background: var(--blue-footer);
+  background: var(--bronze-footer);
 }
 
 .companyTitleFooter a {
