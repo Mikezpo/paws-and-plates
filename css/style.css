@@ -44,6 +44,7 @@ body::after {
   --blue-footer: rgba(219, 209, 189, 0.479);
   --navscroll-color: rgba(138, 129, 115, 0.925);
   --beije-color: rgb(216, 185, 129);
+  --red-color: #882121;
 }
 
 /* GENERAL STYLE */
@@ -90,7 +91,7 @@ nav {
   height: 21px;
 }
 
-.navButton:hover{
+.navButton:hover {
   transform: scale(1.1);
   transition: all 0.7s;
 }
@@ -105,7 +106,8 @@ nav {
   margin-top: 0.6rem;
 }
 
-#barOne, #barThree {
+#barOne,
+#barThree {
   width: 60%;
 }
 
@@ -124,7 +126,7 @@ nav {
   padding: 0;
 }
 
-.navLinks.active{
+.navLinks.active {
   padding: 2rem;
   background: var(--navscroll-color);
   width: 100vw;
@@ -163,14 +165,12 @@ section {
 
 /* TOP SECTION */
 
-
 h2 {
   text-align: center;
   color: var(--white-color);
   font-size: 3rem;
   padding: 5rem 0;
 }
-
 
 /* FORM SEARCH */
 
@@ -262,115 +262,164 @@ h2 {
 /* REGION SECTION */
 
 .regionSection {
-  height: 100%;
-  width: 100%;
+  height: 56rem;
+  width: 90%;
   margin: 0 auto;
-  display: grid;
-  /* grid-template-columns: 2fr 1fr;
-  grid-template-rows: 2fr 1fr; */
-  transition: transform 400ms ease;
 
   border: 1px solid red;
 }
 
-.regionSection[data-status="inactive"] {
-  transform: translateX(-100%);
-  transition: none;
-}
-
-.regionSection[data-status="active"] {
-  transform: translateX(0%);
-}
-
-.regionSection[data-status="before"] {
-  transform: translateX(-100%);
-}
-
-.regionSection[data-status="after"] {
-  transform: translateX(100%);
-}
-
-.regionSection[data-status="becoming-active-from-before"] {
-  transform: translateX(-100%);
-  transition: none;
-}
-
-.regionSection[data-status="becoming-active-from-after"] {
-  transform: translateX(100%);
-  transition: none;
-}
-
-.regionSection > .regionBox {
+.carousel {
+  width: 100%;
   height: 100%;
   display: flex;
+  max-width: 100%;
+  max-height: 56rem;
+  overflow: hidden;
+  position: relative;
 }
 
-.regionIntro {
-  height: 15rem;
+.carouselItem {
+  visibility: visible;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: flex-end;
+  -webkit-align-items: center;
+  -webkit-justify-content: flex-end;
+  position: relative;
+  background-color: var(--beije-color);
+  flex-shrink: 0;
+  -webkit-flex-shrink: 0;
+  position: absolute;
+  z-index: 3;
+  transition: 0.6s all linear;
+}
+
+.carouselInfo {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  display: -webkit-flex;
+  -webkit-justify-content: center;
+  -webkit-flex-direction: column;
+  order: 1;
+  left: 0;
+  margin: 0 auto;
+  padding: 3rem 2rem;
+  width: 40%;
+
   border: 1px solid red;
 }
 
-
-.regionBox {
-  /* width: 70%; */
-  margin: 10rem auto;
-  
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-
-  border: 1px solid red;
+.carouselImage {
+  width: 60%;
+  height: 100%;
+  order: 2;
+  align-self: flex-end;
+  flex-basis: 60%;
+  -webkit-order: 2;
+  -webkit-align-self: flex-end;
+  -webkit-flex-basis: 60%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  transform: translateX(100%);
+  transition: 0.6s all ease-in-out;
 }
 
-.region {
-  width: 20rem;
-  height: 15rem;
-  border-radius: 16px;
-  margin: 1rem;
-  justify-content: center;
-  align-items: center;
+.carouselItem-1 .carouselImage {
+  background-image: url("https://www.iberian-escapes.com/images/viana-do-castelo-santa-luzia.jpg");
+}
+
+.carouselItem-2 .carouselImage {
+  background-image: url("https://images.unsplash.com/photo-1568977337691-8e2c4baa094b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80");
+}
+
+.carouselItem-3 .carouselImage {
+  background-image: url("https://images.unsplash.com/photo-1581887469434-5dacb946ab56?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80");
+}
+
+.carouselItem--4 .carouselImage {
+  background-image: url("https://images.unsplash.com/photo-1531772337062-9d94547f333f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1430&q=80");
+}
+
+.carouselItem--5 .carouselImage {
+  background-image: url("https://images.unsplash.com/photo-1635893312205-6abda7db17a0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80");
+}
+
+
+.carouselBtn {
+  width: 35%;
+  color: var(--red-color);
+  letter-spacing: 0.4rem;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  margin: 0;
+  width: 35%;
+  font-weight: 700;
+  text-decoration: none;
+  transform: translateY(25%);
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.6s all ease-in-out;
+}
+
+.carouselNav {
+  position: absolute;
+  right: 0;
+  z-index: 999;
+  background-color: #fff;
+  bottom: 0;
+}
+
+.carouselIcon {
+  display: inline-block;
+  vertical-align: middle;
+  width: 16px;
+  fill: var(--navscroll-color);
+}
+
+.carouselArrow {
   cursor: pointer;
+  display: inline-block;
+  padding: 11px 15px;
+  position: relative;
 }
 
-.region:hover {
-  transform: scale(1.1);
-  transition: all 0.3s;
-  box-shadow: 0px 0px 10px var(--white-color);;
+.carouselArrow:nth-child(1):after {
+  content: "";
+  right: -3px;
+  position: absolute;
+  width: 1px;
+  background-color: var(--white-color);
+  height: 14px;
+  top: 50%;
+  margin-top: -7px;
 }
 
-h3 {
-  font-size: 2.3rem;
-  text-align: center;
+.active {
+  z-index: 4;
+  display: flex;
+  visibility: visible;
 }
 
-.viana {
-  background: url('https://www.iberian-escapes.com/images/viana-do-castelo-santa-luzia.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
+.active .itemCity,
+.active .itemSubHeading,
+.active .itemDescription,
+.active .carouselBtn {
+  transform: translateY(0);
+  opacity: 1;
+  transition: 0.8s all ease-in-out;
+  visibility: visible;
 }
 
-.braga {
-  background: url('https://images.unsplash.com/photo-1568977337691-8e2c4baa094b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80');
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.porto {
-  background: url('https://images.unsplash.com/photo-1581887469434-5dacb946ab56?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80');
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.aveiro {
-  background: url('https://images.unsplash.com/photo-1531772337062-9d94547f333f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1430&q=80');
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.coimbra {
-  background: url('https://images.unsplash.com/photo-1635893312205-6abda7db17a0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80');
-  background-repeat: no-repeat;
-  background-size: cover;
+.active .carouselImage {
+  transition: 0.8s all ease-in-out;
+  transform: translateX(0);
 }
 
 /* NEWSLETTER */
@@ -420,6 +469,11 @@ h3 {
 
 /* FOOTER */
 
+h3 {
+  font-size: 2.3rem;
+  text-align: center;
+}
+
 footer {
   padding: 5rem 0;
   background: var(--blue-footer);
@@ -439,7 +493,8 @@ footer {
   text-align: center;
 }
 
-.copyrightFooter, .copyrightFooter a {
+.copyrightFooter,
+.copyrightFooter a {
   font-size: 1.2rem;
   display: flex;
   justify-content: center;
@@ -457,10 +512,11 @@ footer {
 /* Footer liquid */
 
 @keyframes wave {
-  from, to {
+  from,
+  to {
     transform: translate(-50%, 0%);
   }
-  
+
   50% {
     transform: translate(-50%, -20%);
   }
@@ -469,11 +525,11 @@ footer {
 #bubble-wrapper {
   height: 100%;
   width: 100%;
-  
+
   position: fixed;
   bottom: 0px;
   z-index: 2;
-  
+
   overflow: hidden;
   pointer-events: none;
 }
@@ -481,18 +537,18 @@ footer {
 .bubble {
   height: max(150px, 15vw);
   width: max(500px, 30vw);
-  
+
   background-color: var(--blue-light-color);
   border-radius: 100%;
-  
+
   position: absolute;
   left: 50%;
   top: 100%;
-  
+
   animation: wave 2s ease-in-out infinite;
 }
 
-@media(prefers-reduced-motion) {
+@media (prefers-reduced-motion) {
   .bubble {
     animation: none;
     display: none;
