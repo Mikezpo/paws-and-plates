@@ -41,6 +41,7 @@ body::after {
   --white-color: rgb(255, 255, 255);
   --black-color: rgb(0, 0, 0);
   --blue-light-color: #9ecaed;
+  --blue-darker-color: #648097;
   --blue-footer: rgba(219, 209, 189, 0.479);
   --navscroll-color: rgba(138, 129, 115, 0.925);
   --beije-color: rgb(216, 185, 129);
@@ -351,9 +352,32 @@ h2 {
   background-image: url("https://images.unsplash.com/photo-1635893312205-6abda7db17a0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80");
 }
 
+.itemContainer {
+  height: 100%;
+  padding: 3rem 2rem;
+
+  border: 1px solid red;
+}
+
+.itemCity {
+  font-size: 4rem;
+}
+
+.itemSubHeading {
+  font-size: 2.6rem;
+  font-weight: 500;
+  color: var(--red-color);
+  text-align: left;
+}
+
+.itemDescription {
+  font-size: 1.8rem;
+  font-weight: 300;
+  text-align: justify;
+}
 
 .carouselBtn {
-  width: 35%;
+  /* width: 35%; */
   color: var(--red-color);
   letter-spacing: 0.4rem;
   font-size: 1.3rem;
@@ -366,6 +390,13 @@ h2 {
   opacity: 0;
   visibility: hidden;
   transition: 0.6s all ease-in-out;
+}
+
+.carouselBtn:hover {
+  transform: scale(1.1);
+  color: var(--blue-darker-color);
+  transition: all 0.3s;
+  border-bottom: 1px solid var(--blue-darker-color);
 }
 
 .carouselNav {
