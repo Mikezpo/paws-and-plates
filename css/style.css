@@ -558,26 +558,22 @@ footer {
 #bubble-wrapper {
   height: 100%;
   width: 100%;
-
   position: fixed;
   bottom: 0px;
-  z-index: 2;
-
+  z-index: 6;
   overflow: hidden;
   pointer-events: none;
+
 }
 
 .bubble {
   height: max(150px, 15vw);
   width: max(500px, 30vw);
-
   background-color: var(--blue-light-color);
   border-radius: 100%;
-
   position: absolute;
   left: 50%;
   top: 100%;
-
   animation: wave 2s ease-in-out infinite;
 }
 
