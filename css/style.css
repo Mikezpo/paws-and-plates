@@ -362,6 +362,7 @@ h2 {
 .itemCity {
   font-size: 4rem;
   color: var(--blue-darker-color);
+  padding-top: 10rem;
 }
 
 .itemSubHeading {
