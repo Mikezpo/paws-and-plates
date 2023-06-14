@@ -364,8 +364,7 @@ h2 {
 .itemCity {
   font-size: 4rem;
   color: var(--blue-darker-color);
-  padding-top: 14rem;
-  text-align: left;
+  padding-top: 10rem;
 }
 
 .itemSubHeading {
@@ -558,7 +557,7 @@ footer {
   }
 }
 
-#bubble-wrapper {
+#bubbleWrapper {
   height: 100%;
   width: 100%;
   position: fixed;
@@ -600,5 +599,5 @@ footer {
   font-weight: 400;
   text-align: justify;
   padding: 0 4rem;
-  color: var(--beije-color);
+  color: var(--)
 }

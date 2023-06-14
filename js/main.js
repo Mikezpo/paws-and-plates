@@ -27,12 +27,12 @@ toggleButton.addEventListener('click', () => {
 
 // Footer liquid
 
-const wrapper = document.getElementById("bubble-wrapper");
+const wrapper = document.getElementById('bubbleWrapper');
 
 const animateBubble = x => {  
-  const bubble = document.createElement("div");
+  const bubble = document.createElement('div');
   
-  bubble.className = "bubble";
+  bubble.className = 'bubble';
   bubble.style.left = `${x}px`;
   
   wrapper.appendChild(bubble);
