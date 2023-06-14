@@ -214,9 +214,11 @@ h2 {
   caret-color: var(--blue-light-color);
 }
 
-/* #items {
-  
-} */
+#items option {
+  /* Custom styling for datalist options */
+  background-color: #f2f2f2;
+  padding: 5px;
+}
 
 #formSearch .fa {
   box-sizing: border-box;
