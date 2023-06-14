@@ -364,7 +364,8 @@ h2 {
 .itemCity {
   font-size: 4rem;
   color: var(--blue-darker-color);
-  padding-top: 10rem;
+  padding-top: 14rem;
+  text-align: left;
 }
 
 .itemSubHeading {
@@ -584,4 +585,20 @@ footer {
     animation: none;
     display: none;
   }
+}
+
+/* ABOUT US - HTML PAGE */
+
+.aboutSection {
+  width: 100%;
+  margin: 2rem auto;
+  padding: 6rem 4rem;
+}
+
+.aboutSectionDescription {
+  font-size: 2rem;
+  font-weight: 400;
+  text-align: justify;
+  padding: 0 4rem;
+  color: var(--beije-color);
 }
