@@ -1,11 +1,3 @@
-const clearInput = () => {
-    const input = document.getElementsByClassName('inputSearch')[0];
-    input.value = '';
-  }
-  
-  const clearBtn = document.getElementById('clearButton');
-  clearBtn.addEventListener('click', clearInput);
-
 // NAVBAR SLIDER
 
 const toggleButton = document.getElementsByClassName('navButton')[0];
@@ -84,3 +76,13 @@ document.addEventListener('DOMContentLoaded', function() {
     console.log('prev ' + prev);
   }
 });
+
+// Search bar
+
+const clearInput = () => {
+  const input = document.getElementsByClassName('inputSearch')[0];
+  input.value = '';
+}
+
+const clearBtn = document.getElementById('clearButton');
+clearBtn.addEventListener('click', clearInput);

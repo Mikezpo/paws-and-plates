@@ -589,7 +589,7 @@ footer {
 /* ABOUT US - HTML PAGE */
 
 .aboutSection {
-  width: 100%;
+  width: 90%;
   margin: 2rem auto;
   padding: 6rem 4rem;
 }
@@ -601,3 +601,7 @@ footer {
   padding: 0 4rem;
   color: var(--)
 }
+
+
+/* CONTACTS - HTML PAGE */
+
