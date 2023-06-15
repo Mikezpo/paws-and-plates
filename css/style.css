@@ -601,9 +601,22 @@ footer {
   font-weight: 400;
   text-align: justify;
   padding: 0 4rem;
-  color: var(--)
+  color: var(--beije-color);
 }
 
 
 /* CONTACTS - HTML PAGE */
 
+.contactSection {
+  width: 90%;
+  margin: 2rem auto;
+  padding: 6rem 4rem;
+}
+
+.contactSectionDescription {
+  font-size: 2rem;
+  font-weight: 400;
+  text-align: justify;
+  padding: 0 4rem;
+  color: var(--beije-color);
+}
