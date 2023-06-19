@@ -529,7 +529,7 @@ footer {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  padding: 2rem;
+  padding: 2rem 0 4rem 0;
   width: 100%;
 }
 
@@ -544,14 +544,19 @@ footer {
 }
 
 .footerList li {
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-weight: 600;
   letter-spacing: 0.2rem;
   margin: 1rem 2rem;
 }
 
 .footerList li:hover {
-  transform: scale(1.1);
+  transform: scale(1.2);
+  transition: all 0.7s;
+}
+
+.footerList li a {
+  color: var(--blue-darker-color);
 }
 
 .copyright {
