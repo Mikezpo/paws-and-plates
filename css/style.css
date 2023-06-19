@@ -540,8 +540,19 @@ footer {
   justify-content: space-evenly;
   align-items: flex-start;
   flex-wrap: wrap;
+  
 }
 
+.footerList li {
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.2rem;
+  margin: 1rem 2rem;
+}
+
+.footerList li:hover {
+  transform: scale(1.1);
+}
 
 .copyright {
   padding: 0 2rem;
