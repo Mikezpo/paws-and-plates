@@ -397,7 +397,6 @@ h2 {
   font-weight: 700;
   text-decoration: none;
   transition: transform 0.3s ease;
-
   visibility: hidden;
   opacity: 0;
 }
@@ -411,16 +410,19 @@ h2 {
   transition: opacity 0.3s ease;
 }
 
+.carouselBtn:hover {
+  transform: translateX(15%);
+  color: var(--blue-darker-color);
+}
+
 .carouselBtn:hover .cityExploreArrow {
   transition: transform 0.3s ease;
   visibility: visible;
   opacity: 1;
 }
 
-.carouselBtn:hover {
-  transform: translateX(15%);
-  color: var(--blue-darker-color);
-}
+
+
 
 .carouselNav {
   position: absolute;
@@ -690,7 +692,7 @@ footer {
   }
 
   .carousel {
-    width: 70%;
+    max-width: 70%;
     margin: 0 auto;
   }
 
@@ -703,6 +705,29 @@ footer {
 
   .carouselInfo {
     width: 100%;
+    padding: 2rem 4rem;
+    height: 40rem;
+
+    border: 1px solid red;
+  }
+
+  .carouselImage {
+    width: 100%;
+    height: 100%;
+
+    border: 1px solid red;
+  }
+
+  .itemContainer {
+    align-items: center;
+  }
+
+  .itemCity {
+    margin: 2rem 0;
+  }
+
+  .itemSubHeading {
+    margin: 1rem 0;
   }
 
 
