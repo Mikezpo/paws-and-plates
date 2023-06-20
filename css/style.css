@@ -306,7 +306,7 @@ h2 {
 }
 
 .carouselInfo {
-  height: 100vh;
+  height: 100%;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -315,8 +315,10 @@ h2 {
   -webkit-flex-direction: column;
   order: 1;
   left: 0;
-  padding: 3rem;
+  padding: 2rem 4rem;
   width: 40%;
+
+  border: 1px solid red;
 }
 
 .carouselImage {
@@ -357,16 +359,18 @@ h2 {
 }
 
 .itemContainer {
-  height: 100%;
-  padding: 3rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
 }
 
 .itemCity {
   font-size: 4rem;
   color: var(--blue-darker-color);
-  padding-top: 18rem;
-  padding-bottom: 2rem;
   text-align: left;
+  margin: 4rem 0;
+  padding: 0;
 }
 
 .itemSubHeading {
@@ -374,36 +378,58 @@ h2 {
   font-weight: 500;
   color: var(--black-color);
   text-align: left;
+  margin: 2rem 0;
 }
 
 .itemDescription {
   font-size: 1.8rem;
   font-weight: 300;
   text-align: justify;
+  width: 100%;
+  margin: 2rem 0;
 }
 
 .carouselBtn {
-  /* width: 35%; */
   color: var(--red-color);
   letter-spacing: 0.4rem;
   font-size: 1.3rem;
   text-transform: uppercase;
   margin: 0;
-  width: 35%;
+  width: 100%;
   font-weight: 700;
   text-decoration: none;
-  transform: translateY(25%);
-  opacity: 0;
+  transition: transform 0.3s ease;
+
   visibility: hidden;
-  transition: 0.6s all ease-in-out;
+  opacity: 0;
 }
 
-.carouselBtn:hover {
-  transform: scale(1.1);
+.cityExploreArrow {
+  fill: var(--red-color);
+  justify-content: center;
+  align-items: center;
+}
+
+.carouselBtn:hover .cityExploreArrow {
+  transform: translateX(15%);
   color: var(--blue-darker-color);
   transition: all 0.3s;
-  border-bottom: 1px solid var(--blue-darker-color);
+  visibility: visible;
+  opacity: 1;
 }
+
+.carouselBtn .cityExploreArrow {
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.carouselBtn:hover .cityExploreArrow {
+  visibility: visible;
+  opacity: 1;
+}
+
+
 
 .carouselNav {
   position: absolute;
@@ -446,13 +472,19 @@ h2 {
 
 .active .itemCity,
 .active .itemSubHeading,
-.active .itemDescription,
-.active .carouselBtn {
+.active .itemDescription {
   transform: translateY(0);
   opacity: 1;
   transition: 0.8s all ease-in-out;
   visibility: visible;
 }
+
+.active .carouselBtn {
+  opacity: 1;
+  transition: 0.8s all ease-in-out;
+  visibility: visible;
+}
+
 
 .active .carouselImage {
   transition: 0.8s all ease-in-out;
