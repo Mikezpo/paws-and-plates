@@ -667,6 +667,22 @@ footer {
   color: var(--beije-color);
 }
 
+/* PET-FRIENDLY TIPS - HTML PAGE */
+
+.petFrienlySection {
+  width: 90%;
+  margin: 2rem auto;
+  padding: 6rem 4rem;
+}
+
+.petFriendlySectionDescription {
+  font-size: 2rem;
+  font-weight: 400;
+  text-align: justify;
+  padding: 0 4rem;
+  color: var(--beije-color);
+}
+
 
 /* CONTACTS - HTML PAGE */
 
