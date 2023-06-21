@@ -689,8 +689,6 @@ footer {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
-  border: 1px solid red;
 }
 
 .formSection input, textarea {
@@ -698,39 +696,50 @@ footer {
   padding: 1rem 0 1rem 1rem;
   margin: 1rem 0;
   border-radius: 16px;
-  border: 1px solid var(--blue-darker-color);
+  border: 1px solid var(--white-color);
+  caret-color: var(--blue-light-color);
 
   align-items: center;
   justify-content: center;
-
-
 }
 
 .formSection input:focus, textarea:focus {
   outline: none;
-  border-color: #9ecaed;
-  box-shadow: 0 0 10px #9ecaed;
+  border-color: var(--beije-color);
+  box-shadow: 0 0 20px var(--blue-light-color);
+}
+
+.submit {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #buttonBlue {
   cursor: pointer;
-  background: var(--blue-dark-color);
+  background: none;
   color: white;
   font-size: 2rem;
-  font-weight: bold;
+  font-weight: 600;
+  margin-bottom: 3rem;
+  width: 50%;
+  display: flex;
+  align-items: center;
 }
 
 #buttonBlue:hover {
-  background: var(--orange-color);
-  outline: none;
-  border-color: #9ecaed;
-  box-shadow: 0 0 10px #9ecaed;
+  color: var(--white-color);
+  transform: scale(1.1);
+  background-color: var(--beije-color);
+  box-shadow: 0 0 20px var(--blue-light-color);
+  transition: all 0.7s ease;
 }
 
 #buttonBlue:focus {
   outline: none;
-  border-color: #9ecaed;
-  box-shadow: 0 0 10px #9ecaed;
+  border-color: var(--blue-light-color);
+  box-shadow: 0 0 20px var(--blue-light-color);
 }
 
 
