@@ -45,6 +45,25 @@
 
         </section>
 
+        <section>
+            <div class="formSection">
+                <h3>Leave us a message</h3>
+                    <form class="form" id="form1" action="https://formsubmit.co/" method="POST">
+                      
+                        <input name="name" type="text" autocomplete="on" spellcheck="true" class="validate[required,custom[onlyLetter],length[0,100]] nameForm contactFeedback" placeholder="Name*" id="name" />
+                      
+                        <input name="email" type="text" autocomplete="on" spellcheck="true" class="validate[required,custom[email]] emailForm contactFeedback" id="email" placeholder="Email*" />
+        
+                        <textarea name="text" class="validate[required,length[6,300]] textForm contactFeedback" id="comment" placeholder="Your message*"></textarea>            
+        
+                      <div class="submit">
+                        <input type="submit" value="SUBMIT" id="buttonBlue" onclick="sendEmail()"/>
+                        <div class="ease"></div>
+                      </div>
+                    </form>
+            </div>
+        </section>
+
 
       <section class="newsletterSection">
         <div>
