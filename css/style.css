@@ -411,7 +411,7 @@ h2 {
 }
 
 .carouselBtn:hover {
-  transform: translateX(15%);
+  transform: translateX(10%);
   color: var(--blue-darker-color);
 }
 
@@ -420,9 +420,6 @@ h2 {
   visibility: visible;
   opacity: 1;
 }
-
-
-
 
 .carouselNav {
   position: absolute;
@@ -550,6 +547,11 @@ footer {
   font-weight: 600;
 }
 
+.companyTitleFooter a:hover {
+  color: var(--blue-light-color);
+  transition: all 0.3s;
+}
+
 .footerList {
   display: flex;
   flex-direction: column;
@@ -601,8 +603,10 @@ footer {
 }
 
 .copyrightFooter a:hover {
-  color: var(--blue-light-color);
+  color: black;
+  transform: scale(1.2);
   transition: all 0.7s;
+  transform: translateX(5%);
 }
 
 /* Footer liquid */
@@ -688,7 +692,6 @@ footer {
   .regionSection {
     height: 100%;
     margin-bottom: 0;
-    border: 1px solid red;
   }
 
   .carousel {
@@ -706,16 +709,12 @@ footer {
   .carouselInfo {
     width: 100%;
     padding: 2rem 4rem;
-    height: 40rem;
-
-    border: 1px solid red;
+    height: 50%;
   }
 
   .carouselImage {
     width: 100%;
     height: 100%;
-
-    border: 1px solid red;
   }
 
   .itemContainer {
@@ -730,6 +729,10 @@ footer {
     margin: 1rem 0;
   }
 
+  .carouselBtn {
+    text-align: center;
+    padding: 1rem 0 0 2rem;
+  }
 
 
 }
