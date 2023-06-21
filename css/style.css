@@ -684,6 +684,10 @@ footer {
   color: var(--beije-color);
 }
 
+.contactFormSection {
+  margin: 4rem;
+}
+
 .formSection {
   display: flex;
   flex-direction: column;
@@ -694,7 +698,7 @@ footer {
 .formSection input, textarea {
   width: 100%;
   padding: 1rem 0 1rem 1rem;
-  margin: 1rem 0;
+  margin: 1.4rem 0;
   border-radius: 16px;
   border: 1px solid var(--white-color);
   caret-color: var(--blue-light-color);
@@ -743,7 +747,11 @@ footer {
 }
 
 .socialMedia {
-  width: 70%;
+  margin: 10rem 0;
+}
+
+.socialMediaImages {
+  width: 60%;
   display: flex;
   align-items: center;
  justify-content: space-evenly;
@@ -751,13 +759,14 @@ footer {
   margin: 0 auto;
 }
 
-.socialMedia img {
+.socialMediaImages img {
   width: 4rem;
+  margin: 2rem;
   filter: grayscale(100%);
   cursor: pointer;
 }
 
-.socialMedia img:hover {
+.socialMediaImages img:hover {
   transform: scale(1.1);
   /* transform: scaleX(3%); */
   filter: none;
