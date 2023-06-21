@@ -92,7 +92,7 @@ nav {
   top: 4rem;
   right: 2rem;
   flex-direction: column;
-  justify-content: space-between;
+ justify-content: space-between;
   width: 30px;
   height: 21px;
 }
@@ -106,7 +106,7 @@ nav {
 .bar {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+ justify-content: center;
   align-items: flex-end;
   width: 3rem;
   border: 1.2px solid var(--white-color);
@@ -141,7 +141,7 @@ nav {
   top: 10rem;
   display: flex;
   align-items: center;
-  justify-content: center;
+ justify-content: center;
 }
 
 .navLinks.active li {
@@ -293,9 +293,9 @@ h2 {
   width: 100%;
   height: 100%;
   align-items: center;
+ justify-content: flex-end;
+  align-items: center;
   justify-content: flex-end;
-  -webkit-align-items: center;
-  -webkit-justify-content: flex-end;
   position: relative;
   background-color: var(--bronze-footer);
   flex-shrink: 0;
@@ -308,10 +308,10 @@ h2 {
 .carouselInfo {
   height: 100%;
   display: flex;
-  justify-content: center;
+ justify-content: center;
   flex-direction: column;
   display: -webkit-flex;
-  -webkit-justify-content: center;
+  justify-content: center;
   -webkit-flex-direction: column;
   order: 1;
   left: 0;
@@ -360,7 +360,7 @@ h2 {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  justify-content: center;
+ justify-content: center;
 }
 
 .itemCity {
@@ -403,7 +403,7 @@ h2 {
 
 .cityExploreArrow {
   fill: var(--blue-darker-color);
-  justify-content: center;
+ justify-content: center;
   align-items: center;
   visibility: hidden;
   opacity: 0;
@@ -564,7 +564,7 @@ footer {
   display: flex;
   width: 90%;
   margin: 0 auto;
-  justify-content: space-evenly;
+ justify-content: space-evenly;
   align-items: flex-start;
   flex-wrap: wrap;
   
@@ -595,7 +595,7 @@ footer {
 .copyrightFooter a {
   font-size: 1.2rem;
   display: flex;
-  justify-content: center;
+ justify-content: center;
   flex-wrap: wrap;
   color: var(--white-color);
   padding-bottom: 1rem;
@@ -688,7 +688,7 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+ justify-content: center;
 }
 
 .formSection input, textarea {
@@ -700,7 +700,7 @@ footer {
   caret-color: var(--blue-light-color);
 
   align-items: center;
-  justify-content: center;
+ justify-content: center;
 }
 
 .formSection input:focus, textarea:focus {
@@ -713,7 +713,7 @@ footer {
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: center;
+ justify-content: center;
 }
 
 #buttonBlue {
@@ -740,6 +740,28 @@ footer {
   outline: none;
   border-color: var(--blue-light-color);
   box-shadow: 0 0 20px var(--blue-light-color);
+}
+
+.socialMedia {
+  width: 70%;
+  display: flex;
+  align-items: center;
+ justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+.socialMedia img {
+  width: 4rem;
+  filter: grayscale(100%);
+  cursor: pointer;
+}
+
+.socialMedia img:hover {
+  transform: scale(1.1);
+  /* transform: scaleX(3%); */
+  filter: none;
+  transition: 0.6s ease;
 }
 
 
