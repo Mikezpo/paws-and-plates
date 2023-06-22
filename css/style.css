@@ -486,6 +486,10 @@ h2 {
 
 /* NEWSLETTER */
 
+.newsletterSection {
+  margin: 0 4rem;
+  padding: 5rem 0 10rem 0;
+}
 .formDiv {
   width: 100%;
   text-align: center;
@@ -519,7 +523,7 @@ h2 {
   color: var(--white-color);
   background: none;
   cursor: pointer;
-  margin-bottom: 2em;
+  margin-bottom: 2rem;
 }
 
 .newsletterBtn:hover {
@@ -853,6 +857,12 @@ footer {
 
 @media screen and (max-width: 575px) {
 
+  .footerList ul {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+  }
   
 }
 
@@ -869,8 +879,6 @@ footer {
   .itemDescription {
     font-size: 1.6rem;
   }
-
-  
 
 }
 
