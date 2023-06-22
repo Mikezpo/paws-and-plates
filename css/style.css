@@ -807,6 +807,7 @@ footer {
   .carouselItem {
     flex-direction: column;
     width: 100%;
+    height: 60rem;
     margin: 0;
     padding: 0;
   }
@@ -819,7 +820,7 @@ footer {
 
   .carouselImage {
     width: 100%;
-    height: 100%;
+    height: 50%;
   }
 
   .itemContainer {
@@ -827,17 +828,66 @@ footer {
   }
 
   .itemCity {
-    margin: 2rem 0;
+    font-size: 3.6rem;
+    margin: 0;
+    padding-bottom: 1rem;
   }
 
   .itemSubHeading {
-    margin: 1rem 0;
+    font-size: 2.2rem;
+    margin: 0;
+  }
+
+  .itemDescription {
+    margin: 0;
+    padding: 1rem 0;
   }
 
   .carouselBtn {
     text-align: center;
     padding: 1rem 0 0 2rem;
   }
+}
 
+@media screen and (max-width: 490px) {
+
+  .itemCity {
+    font-size: 3rem;
+  }
+
+  .itemSubHeading {
+    font-size: 2rem;
+  }
+
+  .itemDescription {
+    font-size: 1.6rem;
+  }
+
+  
+
+}
+
+@media screen and (max-width: 420px) {
+
+  .carouselInfo {
+    padding: 2rem;
+  }
+
+  .itemCity {
+    text-align: center;
+    padding-bottom: 0;
+  }
+
+  .itemSubHeading {
+    padding: 2rem 0;
+  }
+
+  .itemDescription {
+    display: none;
+  }
+
+  .carouselBtn {
+    padding: 0;
+  }
 
 }
