@@ -499,7 +499,7 @@ h2 {
 
 .newsletterSection input {
   height: 3rem;
-  width: 18rem;
+  width: 17rem;
   text-align: center;
 }
 
@@ -517,7 +517,7 @@ h2 {
 .newsletterBtn {
   border-radius: 0 10px 10px 0;
   height: 3rem;
-  width: 15rem;
+  width: 16rem;
   padding: 5px;
   text-align: center;
   margin-left: -0.2rem;
@@ -890,7 +890,7 @@ footer {
   
 }
 
-@media screen and (max-width: 490px) {
+@media screen and (max-width: 500px) {
   .carouselInfo {
     padding: 2rem;
   }
@@ -911,6 +911,16 @@ footer {
     padding: 0;
   }
 
+  .inputBox {
+    border-radius: 16px 16px 0 0;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .newsletterBtn {
+    border-radius: 0 0 16px 16px;
+    margin-left: 0;
+  }
 }
 
 @media screen and (max-width: 420px) {
