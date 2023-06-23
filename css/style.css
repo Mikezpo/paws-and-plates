@@ -570,7 +570,7 @@ footer {
 
 .footerList ul {
   display: flex;
-  width: 90%;
+  max-width: 90rem;
   margin: 0 auto;
   justify-content: space-evenly;
   align-items: flex-start;
@@ -662,25 +662,25 @@ footer {
 /* ABOUT US - HTML PAGE */
 
 .aboutSection {
-  width: 90%;
+  max-width: 90rem;
   margin: 2rem auto;
-  padding: 6rem 4rem;
+  padding: 6rem 4rem 2rem 4rem;
 }
 
 .aboutSectionDescription {
   font-size: 2rem;
   font-weight: 400;
   text-align: justify;
-  padding: 0 4rem;
+  padding: 0 2rem;
   color: var(--beije-color);
 }
 
 /* PET-FRIENDLY TIPS - HTML PAGE */
 
-.petFrienlySection {
-  width: 90%;
+.petFriendlySection {
+  max-width: 90rem;
   margin: 2rem auto;
-  padding: 6rem 4rem;
+  padding: 6rem 2rem 0;
 }
 
 .petFriendlySectionDescription {
@@ -695,9 +695,9 @@ footer {
 /* CONTACTS - HTML PAGE */
 
 .contactSection {
-  width: 90%;
+  max-width: 90rem;
   margin: 2rem auto;
-  padding: 6rem 4rem;
+  padding: 6rem 2rem 0;
 }
 
 .contactSectionDescription {
@@ -752,6 +752,7 @@ footer {
   font-weight: 600;
   margin-bottom: 3rem;
   width: 50%;
+  padding-left: 0;
   display: flex;
   align-items: center;
 }
@@ -771,11 +772,11 @@ footer {
 }
 
 .socialMedia {
-  margin: 10rem 0;
+  margin: 10rem 0 0;
 }
 
 .socialMediaImages {
-  width: 60%;
+  max-width: 90rem;
   display: flex;
   align-items: center;
  justify-content: space-evenly;
@@ -920,6 +921,14 @@ footer {
   .newsletterBtn {
     border-radius: 0 0 16px 16px;
     margin-left: 0;
+  }
+
+  .socialMediaImages {
+    flex-direction: column;
+  }
+
+  .socialMediaImages img {
+    margin-bottom: 3rem;
   }
 }
 
