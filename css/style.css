@@ -772,7 +772,7 @@ footer {
 }
 
 .socialMedia {
-  margin: 10rem 0 0;
+  margin: 5rem 0 0;
 }
 
 .socialMediaImages {
@@ -805,7 +805,7 @@ footer {
 
   .regionSection {
     height: 100%;
-    margin-bottom: 0;
+    margin-bottom: 5rem;
   }
 
   .carousel {
