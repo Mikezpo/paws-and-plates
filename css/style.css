@@ -691,11 +691,12 @@ footer {
   color: var(--beije-color);
 }
 
-
+.petFriendlyTips {
+  padding: 0 4rem;
+}
 
 .petFriendlyTips .tipTitle {
   color: var(--beije-color);
-  cursor: pointer;
   display: flex;
   align-items: center;
 }
@@ -705,8 +706,23 @@ footer {
 }
 
 .toggle {
-  margin-left: 5rem;
+  margin-left: 2rem;
+  font-size: 2.6rem;
+  cursor: pointer;
+}
+
+.tipTitle {
+  transform: scale(1.1);
+}
+
+.tipContent h4 {
+  color: white;
   font-size: 2rem;
+}
+
+.tipContent li {
+  font-size: 2rem;
+  color: var(--beije-color);
 }
 
 
