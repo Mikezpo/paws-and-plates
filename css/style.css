@@ -692,6 +692,28 @@ footer {
 }
 
 
+
+.pet-friendly-tips .tip-title {
+  color: var(--beije-color);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.pet-friendly-tips .tip-content {
+  display: none;
+}
+
+.pet-friendly-tips .toggle {
+  margin-left: 5rem;
+}
+
+.pet-friendly-tips .tip-title:hover {
+  transform: scale(1.1);
+
+}
+
+
 /* CONTACTS - HTML PAGE */
 
 .contactSection {
