@@ -725,6 +725,22 @@ footer {
   color: var(--beije-color);
 }
 
+.tipContent ul {
+  list-style: none;
+  padding-left: 2rem;
+}
+
+.tipContent ul li::before {
+  content: "";
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  margin-right: 1rem;
+  background-image: url("	https://cdn-icons-png.flaticon.com/512/6381/6381533.png");
+  background-size: cover;
+  
+}
+
 
 /* CONTACTS - HTML PAGE */
 
