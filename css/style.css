@@ -693,24 +693,20 @@ footer {
 
 
 
-.pet-friendly-tips .tip-title {
+.petFriendlyTips .tipTitle {
   color: var(--beije-color);
   cursor: pointer;
   display: flex;
   align-items: center;
 }
 
-.pet-friendly-tips .tip-content {
+.petFriendlyTips .tipContent {
   display: none;
 }
 
-.pet-friendly-tips .toggle {
+.toggle {
   margin-left: 5rem;
-}
-
-.pet-friendly-tips .tip-title:hover {
-  transform: scale(1.1);
-
+  font-size: 2rem;
 }
 
 

@@ -45,6 +45,26 @@ const animateBubble = x => {
 
 window.onmousemove = e => animateBubble(e.clientX);
 
+
+// Pet Tips expansion
+
+document.addEventListener('DOMContentLoaded', function () {
+  const toggleElements = document.querySelectorAll('.toggle');
+  for (let i = 0; i < toggleElements.length; i++) {
+    toggleElements[i].addEventListener('click', function () {
+      const tipContent = this.parentNode.nextElementSibling;
+      if (tipContent.style.display === 'none') {
+        tipContent.style.display = 'block';
+        this.textContent = '-';
+      } else {
+        tipContent.style.display = 'none';
+        this.textContent = '+';
+      }
+    });
+  }
+});
+
+
 // Regions
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -97,3 +117,4 @@ const clearInput = () => {
 
 const clearBtn = document.getElementById('clearButton');
 clearBtn.addEventListener('click', clearInput);
+
