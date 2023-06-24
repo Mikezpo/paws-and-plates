@@ -530,8 +530,9 @@ h2 {
 
 .newsletterBtn:hover {
   color: var(--white-color);
-  background-color: var(--beije-color);
-  box-shadow: 0 0 20px var(--blue-light-color);
+  background-color: var(--blue-light-color);
+  border: 1px solid var(--blue-light-color);
+  box-shadow: 0 0 20px var(--white-color);
   transition: all 0.7s;
 }
 
@@ -776,9 +777,8 @@ footer {
   border-radius: 16px;
   border: 1px solid var(--white-color);
   caret-color: var(--blue-light-color);
-
   align-items: center;
- justify-content: center;
+  justify-content: center;
 }
 
 .formSection input:focus, textarea:focus {
@@ -810,8 +810,9 @@ footer {
 #buttonBlue:hover {
   color: var(--white-color);
   transform: scale(1.1);
-  background-color: var(--beije-color);
-  box-shadow: 0 0 20px var(--blue-light-color);
+  background-color: var(--blue-light-color);
+  border: 1px solid var(--blue-light-color);
+  box-shadow: 0 0 20px var(--white-color);
   transition: all 0.7s ease;
 }
 
