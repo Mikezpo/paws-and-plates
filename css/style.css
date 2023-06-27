@@ -62,16 +62,22 @@ h1 {
   margin: 2rem 0 2rem 2rem;
   font-family: "Montserrat", sans-serif;
   word-spacing: 1rem;
-  padding: 0 1rem;
+  padding: 0;
+  z-index: 5;
+}
+
+h1:hover {
+  transform: scale(1.1);
+  transition: all 0.8s ease;
 }
 
 h1 a {
   color: var(--white-color);
+  padding: 1.3rem 0;
 }
 
 h1 a:hover {
-  color: var(--blue-light-color);
-  transition: all 0.3s;
+  color: var(--blue-darker-color);
 }
 
 li {
@@ -92,9 +98,10 @@ nav {
   top: 4rem;
   right: 2rem;
   flex-direction: column;
- justify-content: space-between;
+  justify-content: space-between;
   width: 30px;
   height: 21px;
+  z-index: 5;
 }
 
 .navButton:hover {
@@ -127,6 +134,7 @@ nav {
 
 .navLinks {
   display: none;
+  width: 100%;
 }
 
 .navLinks ul {
@@ -134,11 +142,11 @@ nav {
 }
 
 .navLinks.active {
-  padding: 2rem;
+  padding: 10rem 0 2rem 0;
   background: var( --bronze-footer);
   width: 100vw;
   position: absolute;
-  top: 10rem;
+  top: 0;
   display: flex;
   align-items: center;
  justify-content: center;
