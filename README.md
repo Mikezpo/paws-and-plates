@@ -5,7 +5,7 @@
 
 
 ## Technologies to be used
-In this project was built using the following technologies:
+To build this project we'll be using the following technologies:
 - HTML
 - CSS
 - JavaScript
