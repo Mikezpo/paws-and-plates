@@ -68,25 +68,25 @@ document.addEventListener('DOMContentLoaded', function () {
 // Regions
 
 document.addEventListener('DOMContentLoaded', function() {
-  var carouselItems = document.querySelectorAll('.carouselItem');
+  let carouselItems = document.querySelectorAll('.carouselItem');
   carouselItems[0].classList.add('active');
-  var total = carouselItems.length;
-  var current = 0;
+  let total = carouselItems.length;
+  let current = 0;
 
   document.getElementById('moveRight').addEventListener('click', function() {
-    var next = current;
+    let next = current;
     current = (current + 1) % total;
     setSlide(next, current);
   });
 
   document.getElementById('moveLeft').addEventListener('click', function() {
-    var prev = current;
+    let prev = current;
     current = (current - 1 + total) % total;
     setSlide(prev, current);
   });
 
   function setSlide(prev, next) {
-    var slide = current;
+    let slide = current;
     if (next > total - 1) {
       slide = 0;
       current = 0;
