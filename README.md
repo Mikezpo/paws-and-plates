@@ -1,15 +1,18 @@
 # Paws & Plates
- This website will be an online Platform that will help the user find the perfect spot to drink a coffee with their 4 legged friend.
+ This project is an online Platform that will help the user find the perfect spot to drink a coffee with their 4 legged friend.
  In this Platform the user will be able to find Coffee shops and Restaurants that allow pets not only outside but also inside, for those rainy or cold days.
  This Platform will be focused on mainland Portugal, more specifically in the North region.
 
 
 ## Technologies to be used
-To build this project we'll be using the following technologies:
+To build this project I've used the following technologies:
 - HTML
 - CSS
 - JavaScript
+
+In the near future I intend on using the following tecnologies:
 - React.js
+- API's
 
 
 ## About this project
