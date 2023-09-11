@@ -14,6 +14,7 @@ for (const item of menuItems) {
 }
 
 toggleButton.addEventListener('click', () => {
+  // console.log("Toggle button clicked!");
   navbarLinks.classList.toggle('active');
 });
 
@@ -52,6 +53,7 @@ document.addEventListener('DOMContentLoaded', function () {
   const toggleElements = document.querySelectorAll('.toggle');
   for (let i = 0; i < toggleElements.length; i++) {
     toggleElements[i].addEventListener('click', function () {
+      // console.log("Toggle button clicked!");
       const tipContent = this.parentNode.nextElementSibling;
       if (tipContent.style.display === 'none') {
         tipContent.style.display = 'block';
@@ -117,4 +119,3 @@ const clearInput = () => {
 
 const clearBtn = document.getElementById('clearButton');
 clearBtn.addEventListener('click', clearInput);
-
