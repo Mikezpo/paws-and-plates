@@ -699,7 +699,7 @@ footer {
 .petFriendlySection {
   max-width: 90rem;
   margin: 2rem auto;
-  padding: 6rem 2rem 6rem 0;
+  padding: 6rem 0 6rem 0;
 }
 
 .petFriendlySectionDescription {
@@ -754,6 +754,7 @@ footer {
 
 .tipContent li {
   font-size: 2rem;
+  text-align: justify;
   color: var(--beije-color);
 }
 
@@ -1020,13 +1021,16 @@ footer {
     justify-content: center;
   }
 
+  .petFriendlyTips h4 {
+    text-align: center;
+  }
+
   .petFriendlyTips > ul {
     padding-left: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
   }
 }
 
