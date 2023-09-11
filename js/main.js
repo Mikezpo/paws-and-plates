@@ -55,13 +55,13 @@ document.addEventListener('DOMContentLoaded', function () {
     toggleElements[i].addEventListener('click', function () {
       // console.log("Toggle button clicked!");
       const tipContent = this.parentNode.nextElementSibling;
-      if (tipContent.style.display === 'none') {
-        tipContent.style.display = 'block';
+      if (tipContent.classList.contains('hidden')) {
+        tipContent.classList.remove('hidden');
         this.textContent = '-';
-      } else {
-        tipContent.style.display = 'none';
+    } else {
+        tipContent.classList.add('hidden');
         this.textContent = '+';
-      }
+    }
     });
   }
 });

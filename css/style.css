@@ -725,7 +725,7 @@ footer {
   align-items: center;
 }
 
-.petFriendlyTips .tipContent {
+.hidden {
   display: none;
 }
 
